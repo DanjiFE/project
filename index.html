@@ -2,11 +2,64 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Home work</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+<link href="./Form.css"rel="stylesheet">
 </head>
 <body>
-<h1>Home work list</h1>
-<a href="hw_1/index.html">hw1</a>    
-<a href="hw_2/image/hw2.html">hw2</a> 
+<form action="#" method="get" name="register">
+<label>
+<h3>Full hame</h3>
+<input id="full-name" type="text" name="full_name" placeholder="Full name" required/>
+</label>
+<label>
+<h3>Email</h3>
+<input type="email" name="email" placeholder="email" required/>
+</label>
+<label>
+<h3>Password</h3>
+<input type="Password" name="password" placeholder="password" required/>
+</label>
+<label>
+    <h3>Password</h3>
+    <input type="Password" name="password" placeholder="password" required/>
+    </label>
+<div class="radio">
+<h3>Sex</h3>
+<div>
+<label><h3>Woman</h3>
+<input name='name' type="radio">
+</label>
+<label><h3>Man</h3>
+<input name='name'type="radio">
+</label>
+</div>
+</div>
+<label>
+<h3>Age</h3>
+<input type="number" name="age" placeholder="age" min="30" required/>
+</label>
+<label>
+<h3>Course</h3>
+<select name="select">
+<option>-=Select=-</option>
+<option>Frond-end</option> 
+<option>Back-end</option>
+<option>QA</option>
+<option>Project-management</option>
+</select>
+</label>
+<label>
+<h3>Adress</h3>
+<textarea name="Adress" placeholder="Message" rows="4" cols="50"></textarea>
+</label>
+<label class="checkbox">
+<input type="checkbox" name="Checkbox">
+<h3>Confirm</h3>
+</label>
+<div class="btn"></div>
+<button type="submit">Send</button>
+<button type="reset">reset</button>
+</form>
 </body>
 </html>
